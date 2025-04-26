@@ -13,7 +13,7 @@ const ImageSchema = new mongoose.Schema({
         type:mongoose.Schema.Types.ObjectId,
         ref:'User',
         required:true
-    }
+    },
 },{timestamps:true})
 
-export default ImageSchema;
+export default mongoose.model('Image',ImageSchema);

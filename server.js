@@ -20,7 +20,9 @@ const port = process.env.PORT || 3000;
 app.use('/api/auth',authRoutes)
 app.use('/api/home',homeRoutes)
 app.use('/api/admin',adminRoutes)
-app.use('/api/upload',imageRoute)
+app.use('/api/image',imageRoute)
+
+
 
 app.listen(port,()=>{
     console.log('server running on port 3000')
